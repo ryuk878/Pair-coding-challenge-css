@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+    background-color: #404556;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #404556;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.glas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bulb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.innercircle {
+  width: 80px;
+  height: 80px;
+  background: #fff35c;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+
+
+.curve {
+  width: 80px;
+  height: 60px;
+  background-color: #fff35c;
+  position: relative;
+  bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.overlay {
+  position: absolute;
+  width: 53%;
+  height: 70px;
+  background: #404556;
+  border: none;
+  z-index: 0;
+  top: 4px;
+}
+.left {
+  border-bottom-right-radius: 50%;
+  transform: rotate(-30deg);
+  left: -22px;
+}
+.right {
+  border-bottom-left-radius: 50%;
+  transform: rotate(30deg);
+  right: -22px;
+}
+
+.glas:hover .glow {
+    position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff35c;
+  filter: blur(55px);
+  transition: all 0.5s ease-in-out;
+  margin-top: auto;
+  z-index: 4;
+
+}
+
+
+.screw {
+  position: absolute;
+  bottom: 18px;
+  width: 35px;
+  height: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.bar {
+  width: 80%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.bar--lower {
+  position: relative;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
